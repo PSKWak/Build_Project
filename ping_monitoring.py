@@ -13,7 +13,7 @@ packet_receive = Gauge("packet_receive", "Number of packets received", ["server"
 packet_loss_count = Gauge("packet_loss_count", "Number of packets lost", ["server"])
 packet_loss_rate = Gauge("packet_loss_rate", "Packet loss percentage", ["server"])
 
-# Load configuration from sample.yml
+
 try:
     with open("servers.yml", "r") as f:
         config = yaml.safe_load(f)
